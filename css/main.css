@@ -91,7 +91,7 @@ h2 {
   padding-top: 2%;
 }
 
-.wrapper h3, .whatIDo h3, .experiences h3 {
+.wrapper h3, .whatIDo h3, .experiences h3, .resume h3, .whatIDone h3 {
   color: black;
   font-weight: 500;
 }
@@ -174,4 +174,35 @@ h4 {
   display: inline-block;
   float: initial;
   margin: 5% 0;
+}
+
+.resume {
+  text-align: center;
+}
+
+.resume h3 {
+  color: white;
+  background-image: url(pics/resume.jpg);
+  padding: 3%;
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.resume h3 button {
+  margin-top: 2%;
+  padding: 1%;
+  background: transparent;
+  color: white;
+  border: .5px solid white;
+  font-size: 12px;
+}
+
+.resume h3 button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 0px white;
+}
+
+.whatIDone {
+  text-align: center;
 }
