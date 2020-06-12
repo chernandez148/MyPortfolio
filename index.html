@@ -58,14 +58,23 @@
     <ul>
       <li><img src="css/pics/comp.jpg" alt="computer" width="150px" height="150px">
         <p>DESIGN</p>
+        <p>Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can
+          enjoy on all digital mediums.</p>
       </li>
       <li><img src="css/pics/code.png" alt="code" width="150px" height="150px">
         <p>WEB DEVELOPER</p>
+        <p>As a current Computer Science major in Riverside Community College and five years of freelance experience with web development and design, I strive to grow as a developer and hope to write clean, readable code that can be used by others
+          and leveraged to create beautiful designs.</p>
       </li>
-      <li><img src="css/pics/music.png" alt="computer" width="150px" height="150px">
+      <li><img src="css/pics/bulb.png" alt="bulb" width="150px" height="150px">
         <p>PROACTIVE</p>
+        <p>As a current Computer Science major in Riverside Community College and five years of freelance experience with web development and design, I strive to grow as a developer and hope to write clean, readable code that can be used by others
+          and leveraged to create beautiful designs.</p>
       </li>
     </ul>
+  </div>
+  <div class="experiences">
+    <h3>EXPERIENCE</hs3>
   </div>
   <script>
     $(document).ready(function() {
@@ -109,6 +118,17 @@
           $(".whatIDo").css('opacity', '1');
         } else {
           $(".whatIDo ").css('opacity', '0');
+        }
+      });
+    });
+    $(document).ready(function() {
+      var scroll_pos = 0;
+      $(document).scroll(function() {
+        scroll_pos = $(this).scrollTop();
+        if (scroll_pos > 940) {
+          $(".experiences").css('opacity', '1');
+        } else {
+          $(".experiences ").css('opacity', '0');
         }
       });
     });
