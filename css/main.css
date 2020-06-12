@@ -156,3 +156,22 @@ p {
   text-align: center;
   background: #e6e6e6;
 }
+
+h4 {
+  font-weight: 400;
+  text-align: initial;
+  margin: 0 10%;
+}
+
+.experiences ul {
+  position: initial;
+  background: transparent !important;
+  width: 34%;
+  margin: 0px 8%;
+}
+
+.experiences li {
+  display: inline-block;
+  float: initial;
+  margin: 5% 0;
+}
