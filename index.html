@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <ul>
+        <li class="name">
+          <p>CHRISTIAN HERNANDEZ</p>
+        </li>
+        <li><a class="active" href="#home">EDUCATION</a></li>
+        <li><a href="#news">EXPERIANCE</a></li>
+        <li><a href="#contact">PASSION</a></li>
+        <li><a href="index.html/.aboutMe">ABOUT</a></li>
+      </ul>
+    </div>
+    <div class="header">
+      <h1>HELLO, I'M CHRISTIAN</h1>
+      <h5>WEB DEVELOPER & DESIGNER</h5>
+    </div>
+    <h2>&#8628;</h2>
+  </header>
+  <div class="aboutMe">
+    <div class="wrapper">
+      <h3>A LITTLE BIT ABOUT ME</h3>
+      <img src="css/pics/me&her1.png" alt="me">
+      <p>Hello! my name is Christian Hernandez and I am a web developer with a passion for front-end development and design. I'm currently a third-year at the <a href="#">University of Riverside</a> pursuing a degree in Computer Science. I aspire a
+        career that will allow me to channel my creativity by crafting beautiful designs and engaging experiences.</p>
+      <p>When I'm not on the computer, I enjoy running, music, and hiking.</p>
+      <div class="icons">
+        <h3>TL;DR? Look Below :)</h3>
+        <ul>
+          <li><img src="css/pics/hiking.png" alt="computer" width="100px" height="100px">
+            <p>Hiking</p>
+          </li>
+          <li><img src="css/pics/run.png" alt="computer" width="100px" height="100px">
+            <p>Running</p>
+          </li>
+          <li><img src="css/pics/music.png" alt="computer" width="100px" height="100px">
+            <p>Music</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="whatIDo">
+    <h3>WHAT I DO</h3>
+    <ul>
+      <li><img src="css/pics/comp.jpg" alt="computer" width="150px" height="150px">
+        <p>DESIGN</p>
+      </li>
+      <li><img src="css/pics/code.png" alt="code" width="150px" height="150px">
+        <p>WEB DEVELOPER</p>
+      </li>
+      <li><img src="css/pics/music.png" alt="computer" width="150px" height="150px">
+        <p>PROACTIVE</p>
+      </li>
+    </ul>
+  </div>
+  <script>
+    $(document).ready(function() {
+      var scroll_pos = 0;
+      $(document).scroll(function() {
+        scroll_pos = $(this).scrollTop();
+        if (scroll_pos > 0) {
+          $("ul").css('background-color', '#000000c4');
+        } else {
+          $("ul").css('background-color', 'transparent');
+        }
+      });
+    });
+    $(document).ready(function() {
+      var scroll_pos = 0;
+      $(document).scroll(function() {
+        scroll_pos = $(this).scrollTop();
+        if (scroll_pos > 40) {
+          $(".aboutMe").css('opacity', '1');
+        } else {
+          $(".aboutMe").css('opacity', '0');
+        }
+      });
+    });
+    $(document).ready(function() {
+      var scroll_pos = 0;
+      $(document).scroll(function() {
+        scroll_pos = $(this).scrollTop();
+        if (scroll_pos > 300) {
+          $(".icons").css('opacity', '1');
+        } else {
+          $(".icons").css('opacity', '0');
+        }
+      });
+    });
+    $(document).ready(function() {
+      var scroll_pos = 0;
+      $(document).scroll(function() {
+        scroll_pos = $(this).scrollTop();
+        if (scroll_pos > 600) {
+          $(".whatIDo").css('opacity', '1');
+        } else {
+          $(".whatIDo ").css('opacity', '0');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+html {}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  color: black;
+  margin: 0;
+}
+
+header {
+  background-image: url("pics/image2.jpg");
+  background-size: cover;
+  color: white;
+  opacity: .8;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.navbar {}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+li.name {
+  float: left;
+  padding-left: 40px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  cursor: selector;
+}
+
+.header {
+  padding: 9%;
+}
+
+.header h1 {
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+
+.header h5 {
+  font-weight: 300;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: -webkit-xxx-large;
+  text-align: center;
+  color: #ffffff82;
+  margin: 0;
+}
+
+.aboutMe {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 0 32%;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.wrapper {
+  background: white;
+  padding-top: 2%;
+}
+
+.wrapper h3, .whatIDo h3 {
+  color: black;
+  font-weight: 500;
+}
+
+.wrapper p {
+  padding: 2%;
+}
+
+p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.icons {
+  background: #e6e6e6;
+  padding: 1%;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.icons h3 {
+  font-weight: 200;
+}
+
+.icons ul {
+  position: initial;
+  background: transparent !important;
+}
+
+.icons li {
+  display: inline-block;
+  float: initial;
+  margin: 0 17px;
+}
+
+.whatIDo {
+  text-align: center;
+  opacity: 0;
+  background: white;
+  padding: 1% 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.whatIDo ul {
+  position: initial;
+  background: transparent !important;
+}
+
+.whatIDo li {
+  display: inline-block;
+  float: initial;
+  margin: 0 10%;
+}
