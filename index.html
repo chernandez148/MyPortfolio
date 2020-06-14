@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,22 +15,24 @@
 
 <body>
   <header>
-    <div class="navbar">
-      <ul>
-        <li class="name">
-          <p>CHRISTIAN HERNANDEZ</p>
-        </li>
-        <li><a class="active" href="#home">EDUCATION</a></li>
-        <li><a href="#news">EXPERIANCE</a></li>
-        <li><a href="#contact">PASSION</a></li>
-        <li><a href="index.html/.aboutMe">ABOUT</a></li>
-      </ul>
-    </div>
-    <div class="header">
-      <h1>HELLO, I'M CHRISTIAN</h1>
-      <h5>WEB DEVELOPER & DESIGNER</h5>
-    </div>
-    <h2>&#8628;</h2>
+    <div class="mobile-container">
+      <div class="topnav">
+        <a href="#home" class="active">CHRISTIAN HERNANDEZ</a>
+        <div id="myLinks">
+          <a href="#about">ABOUT</a>
+          <a href="#passion">PASSION</a>
+          <a href="#experience">EXPERIENCE</a>
+          <a href="#education">EDUCATION</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="header">
+        <h1>HELLO, I'M CHRISTIAN</h1>
+        <h5>WEB DEVELOPER & DESIGNER</h5>
+      </div>
+      <h2>&#8628;</h2>
   </header>
   <div class="aboutMe">
     <div class="wrapper">
@@ -36,6 +40,7 @@
       <img src="css/pics/me&her1.png" alt="me">
       <p>Hello! my name is Christian Hernandez and I am a web developer with a passion for front-end development and design. I'm currently a third-year at the <a href="#">University of Riverside</a> pursuing a degree in Computer Science. I aspire a
         career that will allow me to channel my creativity by crafting beautiful designs and engaging experiences.</p>
+      <br>
       <p>When I'm not on the computer, I enjoy running, music, and hiking.</p>
       <div class="icons">
         <h3>TL;DR? Look Below :)</h3>
@@ -54,20 +59,20 @@
     </div>
   </div>
   <div class="whatIDo">
-    <h3>WHAT I DO</h3>
+    <h3 style="padding-bottom: 0;">WHAT I DO</h3>
     <ul>
       <li><img src="css/pics/comp.jpg" alt="computer" width="150px" height="150px">
-        <p>DESIGN</p>
+        <h3>DESIGN</h3>
         <p>Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can
           enjoy on all digital mediums.</p>
       </li>
-      <li><img src="css/pics/code.png" alt="code" width="150px" height="150px">
-        <p>WEB DEVELOPER</p>
+      <li style="background: #e6e6e6;"><img src="css/pics/code.png" alt="code" width="150px" height="150px">
+        <h3>WEB DEVELOPER</h3>
         <p>As a current Computer Science major in Riverside Community College and five years of freelance experience with web development and design, I strive to grow as a developer and hope to write clean, readable code that can be used by others
           and leveraged to create beautiful designs.</p>
       </li>
       <li><img src="css/pics/bulb.png" alt="bulb" width="150px" height="150px">
-        <p>PROACTIVE</p>
+        <h3>PROACTIVE</h3>
         <p>As a current Computer Science major in Riverside Community College and five years of freelance experience with web development and design, I strive to grow as a developer and hope to write clean, readable code that can be used by others
           and leveraged to create beautiful designs.</p>
       </li>
@@ -75,7 +80,7 @@
   </div>
   <div class="experiences">
     <h3>EXPERIENCE</h3>
-    <p style="margin: 2% 30%">I've been doing web development for about 4 years now and I'm always eagar to learn more in this fast pace industry.</p>
+    <p style="margin: 2% 3%">I've been doing web development for about 4 years now and I'm always eagar to learn more in this fast pace industry.</p>
     <h4>SOME TECHNOLOGIES I'VE WORKED WITH</h4>
     <ul>
       <li><img src="css/pics/html5.png" alt="html5" width="80px" height="80px">
@@ -108,17 +113,6 @@
     <p>[more to come]</p>
   </div>
   <script>
-    $(document).ready(function() {
-      var scroll_pos = 0;
-      $(document).scroll(function() {
-        scroll_pos = $(this).scrollTop();
-        if (scroll_pos > 0) {
-          $("ul").css('background-color', '#000000c4');
-        } else {
-          $("ul").css('background-color', 'transparent');
-        }
-      });
-    });
     $(document).ready(function() {
       var scroll_pos = 0;
       $(document).scroll(function() {
